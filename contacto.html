@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — Farmacias del Sombrero</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contacto">
+
+<div class="disclaimer">
+  Esta es una <strong>propuesta conceptual, no oficial</strong> — creada de manera independiente como muestra de interés, no representa al ayuntamiento de Uruapan ni al Movimiento del Sombrero.
+</div>
+
+<header>
+  <div class="nav contenedor">
+    <a href="index.html" class="marca">
+      <svg width="30" height="30" viewBox="0 0 34 34" aria-hidden="true">
+        <ellipse cx="17" cy="22" rx="15" ry="4.5" fill="#C9A876"/>
+        <path d="M9 21 Q17 8 25 21 Z" fill="#1B3A32"/>
+        <ellipse cx="17" cy="21" rx="6" ry="2" fill="#8B2E1F"/>
+      </svg>
+      Farmacias del Sombrero
+    </a>
+    <ul class="nav-links" id="nav-links-principal">
+      <li><a href="servicios.html" data-page="servicios">Servicios</a></li>
+      <li><a href="nosotros.html" data-page="nosotros">Nosotros</a></li>
+      <li><a href="sedes.html" data-page="sedes">Sedes</a></li>
+      <li><a href="como-ayudar.html" data-page="ayudar">Cómo ayudar</a></li>
+      <li><a href="contacto.html" data-page="contacto">Contacto</a></li>
+    </ul>
+    <a href="contacto.html" class="nav-cta">Contáctanos</a>
+    <button class="menu-btn" aria-label="Abrir menú">☰</button>
+  </div>
+  <div class="woven"></div>
+</header>
+
+<section class="pagina-hero">
+  <div class="contenedor">
+    <p class="section-eyebrow">Contacto</p>
+    <h1>¿Tienes una duda o quieres apoyar?</h1>
+    <p>Escríbenos y te responderemos lo antes posible. También puedes usar este formulario si quieres donar medicamento o sumarte como voluntario.</p>
+  </div>
+</section>
+
+<section class="contacto">
+  <div class="contenedor">
+    <div class="contacto-info">
+      <p class="section-eyebrow" style="color:var(--paja)">Antes de escribir</p>
+      <h2>Un par de cosas útiles</h2>
+      <div class="contacto-dato">
+        <div>
+          <span class="etiqueta">Cobertura</span>
+          Uruapan y municipios cercanos, Michoacán
+        </div>
+      </div>
+      <div class="contacto-dato">
+        <div>
+          <span class="etiqueta">Sedes</span>
+          Los datos de contacto directo de cada sede se confirman al acudir; este formulario es el canal general del proyecto.
+        </div>
+      </div>
+      <div class="contacto-dato">
+        <div>
+          <span class="etiqueta">Tiempo de respuesta</span>
+          Hacemos lo posible por responder a la brevedad, aunque puede variar según el volumen de mensajes.
+        </div>
+      </div>
+    </div>
+    <form class="contacto-form">
+      <div class="campo-fila">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+        <div class="campo">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono">
+        </div>
+      </div>
+      <div class="campo">
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+      </div>
+      <div class="campo">
+        <label for="motivo">Motivo</label>
+        <select id="motivo" name="motivo">
+          <option>Quiero donar medicamento</option>
+          <option>Quiero ser voluntario</option>
+          <option>Tengo una pregunta sobre una sede</option>
+          <option>Tengo una pregunta general</option>
+          <option>Otro</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos en qué te podemos ayudar" required></textarea>
+      </div>
+      <button type="submit" class="form-btn">Enviar mensaje</button>
+      <p class="form-nota">Este formulario es parte de una propuesta conceptual y no envía información a ninguna instancia oficial.</p>
+    </form>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="contenedor">
+    <div class="section-head">
+      <p class="section-eyebrow">Preguntas frecuentes</p>
+      <h2>Sobre el contacto</h2>
+    </div>
+    <div class="faq-lista">
+
+      <div class="faq-item">
+        <button class="faq-pregunta">¿Este formulario es un canal oficial?<span class="faq-signo">+</span></button>
+        <div class="faq-respuesta"><div class="faq-respuesta-inner">No. Este sitio es una propuesta conceptual, no oficial, así que este formulario no envía información a ninguna instancia de gobierno.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-pregunta">¿Puedo usar este formulario para donar o ser voluntario?<span class="faq-signo">+</span></button>
+        <div class="faq-respuesta"><div class="faq-respuesta-inner">Sí, selecciona el motivo correspondiente al llenarlo y con gusto te orientamos sobre los siguientes pasos.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-pregunta">¿Cómo contacto a una sede en específico?<span class="faq-signo">+</span></button>
+        <div class="faq-respuesta"><div class="faq-respuesta-inner">Este formulario es el canal general del proyecto. Los datos de contacto directo de cada sede se confirman al momento de la visita.</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="contenedor">
+    <div class="footer-top">
+      <div class="marca">Farmacias del Sombrero</div>
+      <ul class="nav-links" style="display:flex;">
+        <li><a href="servicios.html" data-page="servicios">Servicios</a></li>
+        <li><a href="nosotros.html" data-page="nosotros">Nosotros</a></li>
+        <li><a href="sedes.html" data-page="sedes">Sedes</a></li>
+        <li><a href="como-ayudar.html" data-page="ayudar">Cómo ayudar</a></li>
+        <li><a href="contacto.html" data-page="contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <p>Propuesta conceptual y no oficial, elaborada de manera independiente como muestra de interés. No representa al ayuntamiento de Uruapan, al DIF municipal, ni al Movimiento del Sombrero.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
