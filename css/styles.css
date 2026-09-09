@@ -540,17 +540,47 @@ footer a{ text-decoration:none; }
 footer a:hover{ color: var(--paja); }
 
 @media (max-width: 860px){
-  .nav-links, .nav-cta{ display:none; }
+  #nav-links-principal, .nav-cta{ display:none; }
+  header{ position:sticky; }
+  #nav-links-principal{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    flex-direction:column;
+    gap:0;
+    background: var(--papel);
+    padding:6px 24px 18px;
+    border-bottom:1px solid rgba(27,58,50,0.12);
+    box-shadow:0 10px 18px rgba(20,48,42,0.08);
+  }
+  #nav-links-principal.menu-abierto{ display:flex; }
+  #nav-links-principal li{ width:100%; }
+  #nav-links-principal a{
+    display:block;
+    padding:13px 4px;
+    font-size:15.5px;
+    border-bottom:1px solid rgba(27,58,50,0.08);
+  }
+  #nav-links-principal a.activo::after{ display:none; }
+  #nav-links-principal li:last-child a{ border-bottom:none; }
   .menu-btn{ display:block; }
+  footer .nav-links{ flex-wrap:wrap; gap:12px 18px; }
   .hero .contenedor,
   .acerca .contenedor,
   .contacto .contenedor{
     grid-template-columns:1fr;
   }
-  .hero-visual{ order:-1; max-width:220px; margin:0 auto 12px; }
+  .hero-visual{ display:none; }
   .stats{ grid-template-columns:1fr; gap:20px; }
   .servicios-grid{ grid-template-columns:1fr; }
   .beneficios-grid{ grid-template-columns:1fr; }
   .campo-fila{ grid-template-columns:1fr; }
   section{ padding:56px 0; }
+}
+
+@media (max-width: 480px){
+  .detalle-servicio{ grid-template-columns:1fr; }
+  .detalle-icono{ margin-bottom:10px; }
 }
