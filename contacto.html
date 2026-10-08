@@ -3,40 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contacto — Farmacias del Sombrero</title>
+<title>Contacto | Farmacias del Sombrero</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
 </head>
 <body data-page="contacto">
 
-<div class="disclaimer">
-  Esta es una <strong>propuesta conceptual, no oficial</strong> — creada de manera independiente como muestra de interés, no representa al ayuntamiento de Uruapan ni al Movimiento del Sombrero.
-</div>
+<div id="site-disclaimer"></div>
+<header id="site-header" class="site-header"></header>
 
-<header>
-  <div class="nav contenedor">
-    <a href="index.html" class="marca">
-      <svg width="30" height="30" viewBox="0 0 34 34" aria-hidden="true">
-        <ellipse cx="17" cy="22" rx="15" ry="4.5" fill="#C9A876"/>
-        <path d="M9 21 Q17 8 25 21 Z" fill="#1B3A32"/>
-        <ellipse cx="17" cy="21" rx="6" ry="2" fill="#8B2E1F"/>
-      </svg>
-      Farmacias del Sombrero
-    </a>
-    <ul class="nav-links" id="nav-links-principal">
-      <li><a href="servicios.html" data-page="servicios">Servicios</a></li>
-      <li><a href="nosotros.html" data-page="nosotros">Nosotros</a></li>
-      <li><a href="sedes.html" data-page="sedes">Sedes</a></li>
-      <li><a href="como-ayudar.html" data-page="ayudar">Cómo ayudar</a></li>
-      <li><a href="contacto.html" data-page="contacto">Contacto</a></li>
-    </ul>
-    <a href="contacto.html" class="nav-cta">Contáctanos</a>
-    <button class="menu-btn" aria-label="Abrir menú">☰</button>
-  </div>
-  <div class="woven"></div>
-</header>
+<main>
 
 <section class="pagina-hero">
   <div class="contenedor">
@@ -49,7 +27,7 @@
 <section class="contacto">
   <div class="contenedor">
     <div class="contacto-info">
-      <p class="section-eyebrow" style="color:var(--paja)">Antes de escribir</p>
+      <p class="section-eyebrow" style="color:var(--magenta)">Antes de escribir</p>
       <h2>Un par de cosas útiles</h2>
       <div class="contacto-dato">
         <div>
@@ -132,22 +110,10 @@
   </div>
 </section>
 
-<footer>
-  <div class="contenedor">
-    <div class="footer-top">
-      <div class="marca">Farmacias del Sombrero</div>
-      <ul class="nav-links" style="display:flex;">
-        <li><a href="servicios.html" data-page="servicios">Servicios</a></li>
-        <li><a href="nosotros.html" data-page="nosotros">Nosotros</a></li>
-        <li><a href="sedes.html" data-page="sedes">Sedes</a></li>
-        <li><a href="como-ayudar.html" data-page="ayudar">Cómo ayudar</a></li>
-        <li><a href="contacto.html" data-page="contacto">Contacto</a></li>
-      </ul>
-    </div>
-    <p>Propuesta conceptual y no oficial, elaborada de manera independiente como muestra de interés. No representa al ayuntamiento de Uruapan, al DIF municipal, ni al Movimiento del Sombrero.</p>
-  </div>
-</footer>
+</main>
 
-<script src="js/main.js"></script>
+<footer id="site-footer" class="site-footer"></footer>
+
+<script type="module" src="js/pages/estatica.js"></script>
 </body>
 </html>

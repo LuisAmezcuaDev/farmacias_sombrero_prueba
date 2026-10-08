@@ -1,0 +1,104 @@
+/* Aviso, header, menú flotante (mega menú), footer y hero de páginas internas */
+.disclaimer{
+  background:var(--magenta-claro); color:var(--magenta-oscuro);
+  text-align:center; font-size:13px; padding:8px 16px;
+  border-bottom:1px solid var(--magenta-borde);
+}
+.disclaimer strong{ font-weight:800; }
+
+.site-header{
+  background:#fff; position:sticky; top:0; z-index:60;
+  border-bottom:1px solid var(--borde);
+}
+.nav{ display:flex; align-items:center; gap:16px; min-height:var(--alto-header); }
+.marca{
+  display:flex; align-items:center; gap:10px; font-weight:800; font-size:18px;
+  color:var(--texto); text-decoration:none; white-space:nowrap;
+}
+.marca svg{ flex-shrink:0; }
+.marca em{ color:var(--magenta); font-style:normal; }
+
+.nav-links{ display:flex; gap:2px; list-style:none; margin:0 0 0 12px; padding:0; }
+.nav-links > li{ display:flex; align-items:stretch; }
+.nav-links > li > a,
+.nav-boton{
+  display:flex; align-items:center; gap:6px; height:var(--alto-header);
+  padding:0 14px; font:inherit; font-size:15px; font-weight:600;
+  color:var(--texto); text-decoration:none; background:none; border:0;
+  cursor:pointer; position:relative;
+}
+.nav-links > li > a:hover,.nav-boton:hover{ color:var(--magenta); }
+.nav-links > li > a.activo,.nav-boton.activo{ color:var(--magenta); }
+.nav-links > li > a.activo::after,
+.nav-boton.activo::after{
+  content:""; position:absolute; left:14px; right:14px; bottom:0; height:3px;
+  background:var(--magenta); border-radius:3px 3px 0 0;
+}
+.nav-boton .icono{ transition:transform .2s; }
+.tiene-submenu.abierto .nav-boton .icono{ transform:rotate(180deg); }
+
+/* Menú flotante de categorías */
+.tiene-submenu{ position:static; }
+.mega{
+  display:none; position:absolute; left:0; right:0; top:100%;
+  background:#fff; border-top:1px solid var(--borde); box-shadow:var(--sombra);
+}
+.tiene-submenu.abierto > .mega{ display:block; }
+@media (hover:hover) and (min-width:861px){
+  .tiene-submenu:hover > .mega{ display:block; }
+  .tiene-submenu:hover .nav-boton .icono{ transform:rotate(180deg); }
+}
+.mega-inner{
+  display:grid; grid-template-columns:repeat(4,1fr); gap:6px 20px;
+  padding-top:22px; padding-bottom:22px;
+}
+.mega-lista{ list-style:none; margin:0; padding:0; display:contents; }
+.mega-lista a{
+  display:flex; gap:12px; align-items:center; padding:10px 12px;
+  border-radius:var(--radius-sm); text-decoration:none; color:var(--texto);
+  font-weight:700; font-size:15px; line-height:1.25;
+}
+.mega-lista a:hover{ background:var(--magenta-claro); }
+.mega-lista small{ display:block; font-weight:400; color:var(--texto-suave); font-size:12.5px; }
+.mega-icono{
+  width:38px; height:38px; border-radius:10px; background:var(--magenta-claro);
+  color:var(--magenta); display:grid; place-items:center; flex-shrink:0;
+}
+.mega-todo{
+  grid-column:1/-1; margin-top:6px; padding:12px; border-top:1px solid var(--borde);
+  font-weight:700; color:var(--magenta); text-decoration:none;
+}
+.mega-todo:hover{ text-decoration:underline; }
+
+.nav-solicitudes{
+  margin-left:auto; display:flex; align-items:center; gap:8px; padding:9px 16px;
+  border:2px solid var(--magenta); border-radius:999px; color:var(--magenta);
+  font-weight:700; font-size:14px; text-decoration:none; white-space:nowrap;
+}
+.nav-solicitudes:hover,.nav-solicitudes.activo{ background:var(--magenta-claro); }
+.badge{
+  background:var(--magenta); color:#fff; border-radius:999px; min-width:22px;
+  height:22px; display:inline-grid; place-items:center; font-size:12px; padding:0 6px;
+}
+.badge[hidden]{ display:none; }
+.menu-btn{
+  display:none; background:none; border:0; color:var(--texto); cursor:pointer;
+  padding:6px; border-radius:8px;
+}
+
+/* Hero de páginas internas */
+.pagina-hero{ background:var(--magenta); color:#fff; padding:52px 0 44px; }
+.pagina-hero .section-eyebrow{ color:rgba(255,255,255,.85); }
+.pagina-hero h1{ color:#fff; font-size:clamp(28px,3.6vw,40px); margin-bottom:10px; }
+.pagina-hero p{ color:rgba(255,255,255,.92); max-width:600px; margin:0; font-size:16px; }
+
+/* Footer */
+.site-footer{ background:var(--texto); color:rgba(255,255,255,.75); padding:44px 0 26px; font-size:14px; }
+.footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:32px; margin-bottom:28px; }
+.site-footer h3{ color:#fff; font-size:15px; margin-bottom:12px; }
+.site-footer ul{ list-style:none; margin:0; padding:0; display:grid; gap:8px; }
+.site-footer a{ text-decoration:none; }
+.site-footer a:hover{ color:#fff; text-decoration:underline; }
+.site-footer .marca{ color:#fff; margin-bottom:10px; }
+.site-footer .marca em{ color:#F3A9D0; }
+.footer-legal{ border-top:1px solid rgba(255,255,255,.15); padding-top:18px; font-size:13px; }

@@ -1,0 +1,25 @@
+/* Tokens de diseño: única fuente de verdad para colores, tipografía y medidas */
+:root{
+  --blanco:#FFFFFF;
+  --magenta:#BB2A7B;
+  --magenta-oscuro:#8F1F5E;
+  --magenta-claro:#FBEAF3;
+  --magenta-borde:#F1C9DF;
+
+  --texto:#2A2230;
+  --texto-suave:#6B6273;
+  --fondo-suave:#F7F5F8;
+  --borde:#E8E4EC;
+
+  --verde-ok:#1E7A4C;
+  --ambar:#A35A00;
+  --error:#B3261E;
+
+  --radius:14px;
+  --radius-sm:10px;
+  --sombra:0 8px 24px rgba(42,34,48,.08);
+  --sombra-suave:0 2px 10px rgba(42,34,48,.06);
+
+  --font:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --alto-header:72px;
+}

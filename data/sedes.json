@@ -1,0 +1,54 @@
+{
+  "_nota": "DATOS DE EJEMPLO. Nombres y coordenadas ilustrativas, solo para demostrar el orden por cercanía. No corresponden a direcciones reales.",
+  "sedes": [
+    {
+      "id": "uruapan-1",
+      "nombre": "Sede Uruapan 1",
+      "zona": "Uruapan, Michoacán",
+      "lat": 19.421,
+      "lng": -102.058
+    },
+    {
+      "id": "uruapan-2",
+      "nombre": "Sede Uruapan 2",
+      "zona": "Uruapan, Michoacán",
+      "lat": 19.4105,
+      "lng": -102.049
+    },
+    {
+      "id": "uruapan-3",
+      "nombre": "Sede Uruapan 3",
+      "zona": "Uruapan, Michoacán",
+      "lat": 19.428,
+      "lng": -102.042
+    },
+    {
+      "id": "uruapan-4",
+      "nombre": "Sede Uruapan 4",
+      "zona": "Uruapan, Michoacán",
+      "lat": 19.402,
+      "lng": -102.065
+    },
+    {
+      "id": "uruapan-5",
+      "nombre": "Sede Uruapan 5",
+      "zona": "Uruapan, Michoacán",
+      "lat": 19.435,
+      "lng": -102.072
+    },
+    {
+      "id": "uruapan-6",
+      "nombre": "Sede Uruapan 6",
+      "zona": "Uruapan, Michoacán",
+      "lat": 19.413,
+      "lng": -102.033
+    },
+    {
+      "id": "san-andres-coru",
+      "nombre": "Sede San Andrés Coru",
+      "zona": "Ziracuaretiro, Michoacán",
+      "lat": 19.43,
+      "lng": -101.9
+    }
+  ]
+}

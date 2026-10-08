@@ -1,0 +1,52 @@
+{
+  "categorias": [
+    {
+      "id": "dolor-fiebre",
+      "nombre": "Dolor y fiebre",
+      "descripcion": "Analgésicos y antiinflamatorios",
+      "icono": "dolor"
+    },
+    {
+      "id": "respiratorio-alergias",
+      "nombre": "Respiratorio y alergias",
+      "descripcion": "Tos, alergias y asma",
+      "icono": "respiratorio"
+    },
+    {
+      "id": "digestivo",
+      "nombre": "Digestivo",
+      "descripcion": "Acidez, diarrea e hidratación",
+      "icono": "digestivo"
+    },
+    {
+      "id": "corazon-presion",
+      "nombre": "Corazón y presión",
+      "descripcion": "Presión arterial y colesterol",
+      "icono": "corazon"
+    },
+    {
+      "id": "diabetes",
+      "nombre": "Diabetes",
+      "descripcion": "Control de azúcar en sangre",
+      "icono": "diabetes"
+    },
+    {
+      "id": "infecciones",
+      "nombre": "Infecciones",
+      "descripcion": "Antibióticos y antiparasitarios",
+      "icono": "infecciones"
+    },
+    {
+      "id": "piel-heridas",
+      "nombre": "Piel y heridas",
+      "descripcion": "Cremas y antisépticos",
+      "icono": "piel"
+    },
+    {
+      "id": "vitaminas",
+      "nombre": "Vitaminas y suplementos",
+      "descripcion": "Complementos nutricionales",
+      "icono": "vitaminas"
+    }
+  ]
+}

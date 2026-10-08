@@ -1,0 +1,743 @@
+{
+  "_nota": "DATOS DE EJEMPLO para el prototipo. Existencias, caducidades y sedes no son reales. Revisar con personal de salud antes de usar información real.",
+  "medicamentos": [
+    {
+      "id": "paracetamol-500",
+      "nombre": "Paracetamol",
+      "presentacion": "Tabletas de 500 mg, caja con 20",
+      "descripcion": "Analgésico y antipirético de uso común. Ayuda a aliviar el dolor leve a moderado y a bajar la fiebre.",
+      "categoria": "dolor-fiebre",
+      "requiereReceta": false,
+      "popular": true,
+      "caducidad": "2027-08-31",
+      "inventario": 15,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-1",
+          "unidades": 4
+        },
+        {
+          "sedeId": "uruapan-3",
+          "unidades": 11
+        }
+      ],
+      "imagen": "assets/img/medicamentos/paracetamol-500.webp"
+    },
+    {
+      "id": "ibuprofeno-400",
+      "nombre": "Ibuprofeno",
+      "presentacion": "Tabletas de 400 mg, caja con 20",
+      "descripcion": "Antiinflamatorio no esteroideo. Se usa para el dolor, la inflamación y la fiebre.",
+      "categoria": "dolor-fiebre",
+      "requiereReceta": false,
+      "popular": true,
+      "caducidad": "2027-10-31",
+      "inventario": 31,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-3",
+          "unidades": 9
+        },
+        {
+          "sedeId": "uruapan-5",
+          "unidades": 16
+        },
+        {
+          "sedeId": "san-andres-coru",
+          "unidades": 6
+        }
+      ],
+      "imagen": "assets/img/medicamentos/ibuprofeno-400.webp"
+    },
+    {
+      "id": "naproxeno-550",
+      "nombre": "Naproxeno sódico",
+      "presentacion": "Tabletas de 550 mg, caja con 10",
+      "descripcion": "Antiinflamatorio y analgésico para dolor muscular, articular y de cabeza.",
+      "categoria": "dolor-fiebre",
+      "requiereReceta": false,
+      "popular": true,
+      "caducidad": "2027-12-31",
+      "inventario": 47,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-5",
+          "unidades": 14
+        },
+        {
+          "sedeId": "san-andres-coru",
+          "unidades": 4
+        },
+        {
+          "sedeId": "uruapan-2",
+          "unidades": 11
+        },
+        {
+          "sedeId": "uruapan-4",
+          "unidades": 18
+        }
+      ],
+      "imagen": "assets/img/medicamentos/naproxeno-550.webp"
+    },
+    {
+      "id": "acido-acetilsalicilico-500",
+      "nombre": "Ácido acetilsalicílico",
+      "presentacion": "Tabletas de 500 mg, caja con 20",
+      "descripcion": "Analgésico, antipirético y antiinflamatorio para dolor leve y fiebre.",
+      "categoria": "dolor-fiebre",
+      "requiereReceta": false,
+      "popular": false,
+      "caducidad": "2028-01-31",
+      "inventario": 28,
+      "farmacias": [
+        {
+          "sedeId": "san-andres-coru",
+          "unidades": 19
+        },
+        {
+          "sedeId": "uruapan-2",
+          "unidades": 9
+        }
+      ],
+      "imagen": "assets/img/medicamentos/acido-acetilsalicilico-500.webp"
+    },
+    {
+      "id": "diclofenaco-gel",
+      "nombre": "Diclofenaco gel",
+      "presentacion": "Gel tópico 1%, tubo de 60 g",
+      "descripcion": "Antiinflamatorio de uso externo para dolor muscular y articular localizado.",
+      "categoria": "dolor-fiebre",
+      "requiereReceta": false,
+      "popular": false,
+      "caducidad": "2027-12-31",
+      "inventario": 25,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-2",
+          "unidades": 7
+        },
+        {
+          "sedeId": "uruapan-4",
+          "unidades": 14
+        },
+        {
+          "sedeId": "uruapan-6",
+          "unidades": 4
+        }
+      ],
+      "imagen": "assets/img/medicamentos/diclofenaco-gel.webp"
+    },
+    {
+      "id": "loratadina-10",
+      "nombre": "Loratadina",
+      "presentacion": "Tabletas de 10 mg, caja con 10",
+      "descripcion": "Antihistamínico que ayuda a aliviar síntomas de alergia como estornudos, comezón y escurrimiento nasal.",
+      "categoria": "respiratorio-alergias",
+      "requiereReceta": false,
+      "popular": true,
+      "caducidad": "2028-02-29",
+      "inventario": 56,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-4",
+          "unidades": 12
+        },
+        {
+          "sedeId": "uruapan-6",
+          "unidades": 19
+        },
+        {
+          "sedeId": "uruapan-1",
+          "unidades": 9
+        },
+        {
+          "sedeId": "uruapan-3",
+          "unidades": 16
+        }
+      ],
+      "imagen": "assets/img/medicamentos/loratadina-10.webp"
+    },
+    {
+      "id": "clorfenamina-4",
+      "nombre": "Clorfenamina",
+      "presentacion": "Tabletas de 4 mg, caja con 20",
+      "descripcion": "Antihistamínico para el alivio de síntomas de alergia y de resfriado.",
+      "categoria": "respiratorio-alergias",
+      "requiereReceta": false,
+      "popular": false,
+      "caducidad": "2027-09-30",
+      "inventario": 24,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-6",
+          "unidades": 17
+        },
+        {
+          "sedeId": "uruapan-1",
+          "unidades": 7
+        }
+      ],
+      "imagen": "assets/img/medicamentos/clorfenamina-4.webp"
+    },
+    {
+      "id": "ambroxol-jarabe",
+      "nombre": "Ambroxol",
+      "presentacion": "Jarabe 15 mg/5 ml, frasco de 120 ml",
+      "descripcion": "Mucolítico que ayuda a hacer menos espesa la flema y facilita la tos productiva.",
+      "categoria": "respiratorio-alergias",
+      "requiereReceta": false,
+      "popular": true,
+      "caducidad": "2027-07-31",
+      "inventario": 36,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-1",
+          "unidades": 5
+        },
+        {
+          "sedeId": "uruapan-3",
+          "unidades": 12
+        },
+        {
+          "sedeId": "uruapan-5",
+          "unidades": 19
+        }
+      ],
+      "imagen": "assets/img/medicamentos/ambroxol-jarabe.webp"
+    },
+    {
+      "id": "salbutamol-inhalador",
+      "nombre": "Salbutamol",
+      "presentacion": "Inhalador 100 mcg, 200 dosis",
+      "descripcion": "Broncodilatador de acción rápida para aliviar la falta de aire en asma y otras afecciones respiratorias.",
+      "categoria": "respiratorio-alergias",
+      "requiereReceta": true,
+      "popular": false,
+      "caducidad": "2028-03-31",
+      "inventario": 5,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-3",
+          "unidades": 3
+        },
+        {
+          "sedeId": "uruapan-5",
+          "unidades": 2
+        }
+      ],
+      "imagen": "assets/img/medicamentos/salbutamol-inhalador.webp"
+    },
+    {
+      "id": "omeprazol-20",
+      "nombre": "Omeprazol",
+      "presentacion": "Cápsulas de 20 mg, caja con 14",
+      "descripcion": "Reduce la producción de ácido del estómago. Se usa en gastritis, reflujo y acidez.",
+      "categoria": "digestivo",
+      "requiereReceta": false,
+      "popular": true,
+      "caducidad": "2028-04-30",
+      "inventario": 20,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-5",
+          "unidades": 15
+        },
+        {
+          "sedeId": "san-andres-coru",
+          "unidades": 5
+        }
+      ],
+      "imagen": "assets/img/medicamentos/omeprazol-20.webp"
+    },
+    {
+      "id": "loperamida-2",
+      "nombre": "Loperamida",
+      "presentacion": "Cápsulas de 2 mg, caja con 12",
+      "descripcion": "Antidiarreico que ayuda a disminuir la frecuencia de las evacuaciones líquidas.",
+      "categoria": "digestivo",
+      "requiereReceta": false,
+      "popular": true,
+      "caducidad": "2027-11-30",
+      "inventario": 47,
+      "farmacias": [
+        {
+          "sedeId": "san-andres-coru",
+          "unidades": 20
+        },
+        {
+          "sedeId": "uruapan-2",
+          "unidades": 10
+        },
+        {
+          "sedeId": "uruapan-4",
+          "unidades": 17
+        }
+      ],
+      "imagen": "assets/img/medicamentos/loperamida-2.webp"
+    },
+    {
+      "id": "suero-oral",
+      "nombre": "Sales de rehidratación oral",
+      "presentacion": "Sobre para 1 litro, caja con 10",
+      "descripcion": "Ayuda a reponer líquidos y sales perdidos por diarrea o vómito y a prevenir la deshidratación.",
+      "categoria": "digestivo",
+      "requiereReceta": false,
+      "popular": true,
+      "caducidad": "2028-05-31",
+      "inventario": 40,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-2",
+          "unidades": 8
+        },
+        {
+          "sedeId": "uruapan-4",
+          "unidades": 15
+        },
+        {
+          "sedeId": "uruapan-6",
+          "unidades": 5
+        },
+        {
+          "sedeId": "uruapan-1",
+          "unidades": 12
+        }
+      ],
+      "imagen": "assets/img/medicamentos/suero-oral.webp"
+    },
+    {
+      "id": "hidroxido-aluminio-magnesio",
+      "nombre": "Hidróxido de aluminio y magnesio",
+      "presentacion": "Suspensión oral, frasco de 360 ml",
+      "descripcion": "Antiácido para el alivio de la acidez y el malestar estomacal ocasional.",
+      "categoria": "digestivo",
+      "requiereReceta": false,
+      "popular": false,
+      "caducidad": "2027-10-31",
+      "inventario": 3,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-4",
+          "unidades": 2
+        },
+        {
+          "sedeId": "uruapan-6",
+          "unidades": 1
+        }
+      ],
+      "imagen": "assets/img/medicamentos/hidroxido-aluminio-magnesio.webp"
+    },
+    {
+      "id": "losartan-50",
+      "nombre": "Losartán",
+      "presentacion": "Tabletas de 50 mg, caja con 30",
+      "descripcion": "Antihipertensivo que ayuda a controlar la presión arterial.",
+      "categoria": "corazon-presion",
+      "requiereReceta": true,
+      "popular": true,
+      "caducidad": "2028-01-31",
+      "inventario": 41,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-6",
+          "unidades": 18
+        },
+        {
+          "sedeId": "uruapan-1",
+          "unidades": 8
+        },
+        {
+          "sedeId": "uruapan-3",
+          "unidades": 15
+        }
+      ],
+      "imagen": "assets/img/medicamentos/losartan-50.webp"
+    },
+    {
+      "id": "captopril-25",
+      "nombre": "Captopril",
+      "presentacion": "Tabletas de 25 mg, caja con 30",
+      "descripcion": "Antihipertensivo inhibidor de la ECA, para el control de la presión arterial.",
+      "categoria": "corazon-presion",
+      "requiereReceta": true,
+      "popular": false,
+      "caducidad": "2027-12-31",
+      "inventario": 49,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-1",
+          "unidades": 6
+        },
+        {
+          "sedeId": "uruapan-3",
+          "unidades": 13
+        },
+        {
+          "sedeId": "uruapan-5",
+          "unidades": 20
+        },
+        {
+          "sedeId": "san-andres-coru",
+          "unidades": 10
+        }
+      ],
+      "imagen": "assets/img/medicamentos/captopril-25.webp"
+    },
+    {
+      "id": "amlodipino-5",
+      "nombre": "Amlodipino",
+      "presentacion": "Tabletas de 5 mg, caja con 30",
+      "descripcion": "Antihipertensivo que ayuda a controlar la presión arterial y a prevenir ciertos tipos de dolor de pecho.",
+      "categoria": "corazon-presion",
+      "requiereReceta": true,
+      "popular": false,
+      "caducidad": "2028-06-30",
+      "inventario": 29,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-3",
+          "unidades": 11
+        },
+        {
+          "sedeId": "uruapan-5",
+          "unidades": 18
+        }
+      ],
+      "imagen": "assets/img/medicamentos/amlodipino-5.webp"
+    },
+    {
+      "id": "atorvastatina-20",
+      "nombre": "Atorvastatina",
+      "presentacion": "Tabletas de 20 mg, caja con 30",
+      "descripcion": "Ayuda a reducir el colesterol y los triglicéridos en sangre.",
+      "categoria": "corazon-presion",
+      "requiereReceta": true,
+      "popular": false,
+      "caducidad": "2028-03-31",
+      "inventario": 35,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-5",
+          "unidades": 16
+        },
+        {
+          "sedeId": "san-andres-coru",
+          "unidades": 6
+        },
+        {
+          "sedeId": "uruapan-2",
+          "unidades": 13
+        }
+      ],
+      "imagen": "assets/img/medicamentos/atorvastatina-20.webp"
+    },
+    {
+      "id": "metformina-850",
+      "nombre": "Metformina",
+      "presentacion": "Tabletas de 850 mg, caja con 30",
+      "descripcion": "Antidiabético oral que ayuda a controlar el nivel de azúcar en sangre en la diabetes tipo 2.",
+      "categoria": "diabetes",
+      "requiereReceta": true,
+      "popular": true,
+      "caducidad": "2028-02-29",
+      "inventario": 41,
+      "farmacias": [
+        {
+          "sedeId": "san-andres-coru",
+          "unidades": 4
+        },
+        {
+          "sedeId": "uruapan-2",
+          "unidades": 11
+        },
+        {
+          "sedeId": "uruapan-4",
+          "unidades": 18
+        },
+        {
+          "sedeId": "uruapan-6",
+          "unidades": 8
+        }
+      ],
+      "imagen": "assets/img/medicamentos/metformina-850.webp"
+    },
+    {
+      "id": "glibenclamida-5",
+      "nombre": "Glibenclamida",
+      "presentacion": "Tabletas de 5 mg, caja con 50",
+      "descripcion": "Antidiabético oral que ayuda a estimular la producción de insulina.",
+      "categoria": "diabetes",
+      "requiereReceta": true,
+      "popular": false,
+      "caducidad": "2027-09-30",
+      "inventario": 25,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-2",
+          "unidades": 9
+        },
+        {
+          "sedeId": "uruapan-4",
+          "unidades": 16
+        }
+      ],
+      "imagen": "assets/img/medicamentos/glibenclamida-5.webp"
+    },
+    {
+      "id": "amoxicilina-500",
+      "nombre": "Amoxicilina",
+      "presentacion": "Cápsulas de 500 mg, caja con 12",
+      "descripcion": "Antibiótico para infecciones bacterianas. Requiere receta y debe tomarse completo según la indicación médica.",
+      "categoria": "infecciones",
+      "requiereReceta": true,
+      "popular": true,
+      "caducidad": "2027-08-31",
+      "inventario": 29,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-4",
+          "unidades": 14
+        },
+        {
+          "sedeId": "uruapan-6",
+          "unidades": 4
+        },
+        {
+          "sedeId": "uruapan-1",
+          "unidades": 11
+        }
+      ],
+      "imagen": "assets/img/medicamentos/amoxicilina-500.webp"
+    },
+    {
+      "id": "azitromicina-500",
+      "nombre": "Azitromicina",
+      "presentacion": "Tabletas de 500 mg, caja con 3",
+      "descripcion": "Antibiótico para ciertas infecciones respiratorias, de garganta y de piel. Requiere receta.",
+      "categoria": "infecciones",
+      "requiereReceta": true,
+      "popular": false,
+      "caducidad": "2027-11-30",
+      "inventario": 6,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-6",
+          "unidades": 2
+        },
+        {
+          "sedeId": "uruapan-1",
+          "unidades": 3
+        },
+        {
+          "sedeId": "uruapan-3",
+          "unidades": 1
+        }
+      ],
+      "imagen": "assets/img/medicamentos/azitromicina-500.webp"
+    },
+    {
+      "id": "metronidazol-500",
+      "nombre": "Metronidazol",
+      "presentacion": "Tabletas de 500 mg, caja con 20",
+      "descripcion": "Antibiótico y antiparasitario para infecciones intestinales y vaginales. Requiere receta.",
+      "categoria": "infecciones",
+      "requiereReceta": true,
+      "popular": false,
+      "caducidad": "2028-01-31",
+      "inventario": 21,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-1",
+          "unidades": 7
+        },
+        {
+          "sedeId": "uruapan-3",
+          "unidades": 14
+        }
+      ],
+      "imagen": "assets/img/medicamentos/metronidazol-500.webp"
+    },
+    {
+      "id": "clotrimazol-crema",
+      "nombre": "Clotrimazol crema",
+      "presentacion": "Crema 1%, tubo de 20 g",
+      "descripcion": "Antimicótico tópico para infecciones por hongos en la piel.",
+      "categoria": "piel-heridas",
+      "requiereReceta": false,
+      "popular": false,
+      "caducidad": "2028-04-30",
+      "inventario": 40,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-3",
+          "unidades": 12
+        },
+        {
+          "sedeId": "uruapan-5",
+          "unidades": 19
+        },
+        {
+          "sedeId": "san-andres-coru",
+          "unidades": 9
+        }
+      ],
+      "imagen": "assets/img/medicamentos/clotrimazol-crema.webp"
+    },
+    {
+      "id": "hidrocortisona-crema",
+      "nombre": "Hidrocortisona crema",
+      "presentacion": "Crema 1%, tubo de 15 g",
+      "descripcion": "Corticoide tópico de baja potencia para el alivio de la comezón y la irritación de la piel.",
+      "categoria": "piel-heridas",
+      "requiereReceta": false,
+      "popular": false,
+      "caducidad": "2027-12-31",
+      "inventario": 42,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-5",
+          "unidades": 17
+        },
+        {
+          "sedeId": "san-andres-coru",
+          "unidades": 7
+        },
+        {
+          "sedeId": "uruapan-2",
+          "unidades": 14
+        },
+        {
+          "sedeId": "uruapan-4",
+          "unidades": 4
+        }
+      ],
+      "imagen": "assets/img/medicamentos/hidrocortisona-crema.webp"
+    },
+    {
+      "id": "povidona-yodada",
+      "nombre": "Povidona yodada",
+      "presentacion": "Solución antiséptica, frasco de 120 ml",
+      "descripcion": "Antiséptico para limpiar y desinfectar la piel antes y después de heridas pequeñas.",
+      "categoria": "piel-heridas",
+      "requiereReceta": false,
+      "popular": false,
+      "caducidad": "2028-05-31",
+      "inventario": 17,
+      "farmacias": [
+        {
+          "sedeId": "san-andres-coru",
+          "unidades": 5
+        },
+        {
+          "sedeId": "uruapan-2",
+          "unidades": 12
+        }
+      ],
+      "imagen": "assets/img/medicamentos/povidona-yodada.webp"
+    },
+    {
+      "id": "acido-folico-5",
+      "nombre": "Ácido fólico",
+      "presentacion": "Tabletas de 5 mg, caja con 30",
+      "descripcion": "Suplemento de vitamina B9, importante antes y durante el embarazo y en ciertas anemias.",
+      "categoria": "vitaminas",
+      "requiereReceta": false,
+      "popular": false,
+      "caducidad": "2028-02-29",
+      "inventario": 34,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-2",
+          "unidades": 10
+        },
+        {
+          "sedeId": "uruapan-4",
+          "unidades": 17
+        },
+        {
+          "sedeId": "uruapan-6",
+          "unidades": 7
+        }
+      ],
+      "imagen": "assets/img/medicamentos/acido-folico-5.webp"
+    },
+    {
+      "id": "vitamina-c-500",
+      "nombre": "Vitamina C",
+      "presentacion": "Tabletas de 500 mg, frasco con 30",
+      "descripcion": "Suplemento de ácido ascórbico para complementar la alimentación.",
+      "categoria": "vitaminas",
+      "requiereReceta": false,
+      "popular": true,
+      "caducidad": "2028-06-30",
+      "inventario": 51,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-4",
+          "unidades": 15
+        },
+        {
+          "sedeId": "uruapan-6",
+          "unidades": 5
+        },
+        {
+          "sedeId": "uruapan-1",
+          "unidades": 12
+        },
+        {
+          "sedeId": "uruapan-3",
+          "unidades": 19
+        }
+      ],
+      "imagen": "assets/img/medicamentos/vitamina-c-500.webp"
+    },
+    {
+      "id": "complejo-b",
+      "nombre": "Complejo B",
+      "presentacion": "Tabletas, frasco con 30",
+      "descripcion": "Suplemento de vitaminas del complejo B para complementar la alimentación.",
+      "categoria": "vitaminas",
+      "requiereReceta": false,
+      "popular": false,
+      "caducidad": "2028-03-31",
+      "inventario": 30,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-6",
+          "unidades": 20
+        },
+        {
+          "sedeId": "uruapan-1",
+          "unidades": 10
+        }
+      ],
+      "imagen": "assets/img/medicamentos/complejo-b.webp"
+    },
+    {
+      "id": "sulfato-ferroso-200",
+      "nombre": "Sulfato ferroso",
+      "presentacion": "Tabletas de 200 mg, frasco con 30",
+      "descripcion": "Suplemento de hierro usado en la anemia por falta de hierro, bajo indicación.",
+      "categoria": "vitaminas",
+      "requiereReceta": false,
+      "popular": false,
+      "caducidad": "2028-01-31",
+      "inventario": 28,
+      "farmacias": [
+        {
+          "sedeId": "uruapan-1",
+          "unidades": 8
+        },
+        {
+          "sedeId": "uruapan-3",
+          "unidades": 15
+        },
+        {
+          "sedeId": "uruapan-5",
+          "unidades": 5
+        }
+      ],
+      "imagen": "assets/img/medicamentos/sulfato-ferroso-200.webp"
+    }
+  ]
+}

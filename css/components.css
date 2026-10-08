@@ -1,0 +1,162 @@
+/* Componentes generales: hero de inicio, categorías, pasos, beneficios,
+   prueba social, nosotros, detalle de servicios, FAQ, CTA, formularios */
+
+/* Hero compacto de inicio */
+.hero-inicio{
+  background:linear-gradient(135deg,#fff 0%,var(--magenta-claro) 100%);
+  padding:44px 0; border-bottom:1px solid var(--borde);
+}
+.hero-grid{ display:grid; grid-template-columns:1.5fr .9fr; gap:32px; align-items:center; }
+.hero-inicio h1{ font-size:clamp(28px,3.8vw,44px); margin-bottom:12px; }
+.resalte{ color:var(--magenta); }
+.lead{ font-size:17px; color:var(--texto-suave); max-width:520px; }
+.buscador{ display:flex; gap:8px; margin:20px 0 14px; max-width:540px; }
+.buscador input{
+  flex:1; min-width:0; font:inherit; font-size:16px; padding:12px 18px;
+  border:2px solid var(--magenta-borde); border-radius:999px; background:#fff;
+}
+.buscador input:focus{ outline:none; border-color:var(--magenta); }
+.chips{ display:flex; flex-wrap:wrap; gap:8px; align-items:center; font-size:14px; color:var(--texto-suave); }
+.chip{
+  padding:5px 14px; border:1px solid var(--magenta-borde); border-radius:999px;
+  background:#fff; color:var(--magenta-oscuro); font-weight:600; text-decoration:none; font-size:13.5px;
+}
+.chip:hover{ background:var(--magenta); color:#fff; border-color:var(--magenta); }
+.hero-promo{
+  background:#fff; border:1px solid var(--magenta-borde); border-radius:var(--radius);
+  padding:24px; text-align:center; box-shadow:var(--sombra-suave);
+}
+.hero-promo svg{ margin:0 auto 12px; }
+.hero-promo strong{ display:block; font-size:18px; margin-bottom:6px; }
+.hero-promo p{ color:var(--texto-suave); font-size:14.5px; margin-bottom:12px; }
+
+/* Categorías */
+.categorias-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+.categoria-tile{
+  display:flex; align-items:center; gap:14px; padding:16px; background:#fff;
+  border:1px solid var(--borde); border-radius:var(--radius); text-decoration:none;
+  transition:border-color .15s,box-shadow .15s,transform .15s;
+}
+.categoria-tile:hover{ border-color:var(--magenta); box-shadow:var(--sombra-suave); transform:translateY(-2px); }
+.categoria-tile strong{ display:block; font-size:15.5px; line-height:1.25; }
+.categoria-tile small{ color:var(--texto-suave); font-size:12.5px; }
+
+/* Cómo apartar */
+.pasos{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(4,1fr); gap:18px; counter-reset:paso; }
+.pasos li{
+  counter-increment:paso; background:#fff; border:1px solid var(--borde);
+  border-radius:var(--radius); padding:22px 20px; position:relative;
+}
+.pasos li::before{
+  content:counter(paso); display:grid; place-items:center; width:34px; height:34px;
+  border-radius:50%; background:var(--magenta); color:#fff; font-weight:800; margin-bottom:12px;
+}
+.pasos h3{ font-size:17px; margin-bottom:6px; }
+.pasos p{ color:var(--texto-suave); font-size:14.5px; margin:0; }
+
+/* Beneficios */
+.beneficios-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:18px 40px; }
+.beneficio{ display:flex; gap:14px; align-items:flex-start; }
+.beneficio-check{
+  width:28px; height:28px; border-radius:50%; background:var(--magenta-claro);
+  color:var(--magenta); flex-shrink:0; display:grid; place-items:center;
+  font-size:14px; font-weight:800;
+}
+.beneficio h3{ font-size:16px; margin-bottom:4px; }
+.beneficio p{ font-size:14.5px; color:var(--texto-suave); margin:0; }
+
+/* Prueba social (ahora vive en Nosotros) */
+.social-proof{ padding:40px 0; border-bottom:1px solid var(--borde); }
+.stats{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; text-align:center; }
+.stat-num{ font-size:38px; font-weight:800; color:var(--magenta); line-height:1.1; }
+.stat-label{ font-size:14px; color:var(--texto-suave); }
+.prensa{ margin-top:28px; text-align:center; font-size:12.5px; color:var(--texto-suave); letter-spacing:.03em; }
+.prensa-logos{
+  display:flex; justify-content:center; gap:28px; margin-top:10px; flex-wrap:wrap;
+  font-size:15px; font-weight:700; color:var(--texto-suave);
+}
+
+/* Nosotros: línea de tiempo y texto */
+.acerca{ background:var(--fondo-suave); }
+.acerca .contenedor{ display:grid; grid-template-columns:.9fr 1.1fr; gap:56px; align-items:center; }
+.acerca-timeline{
+  border-left:3px solid var(--magenta-borde); padding-left:22px;
+  display:flex; flex-direction:column; gap:22px;
+}
+.acerca-timeline .año{ font-size:15px; color:var(--magenta); font-weight:800; margin-bottom:2px; }
+.acerca-timeline p{ font-size:14.5px; color:var(--texto-suave); margin:0; }
+.acerca-texto p{ font-size:16px; }
+.acerca-texto p:first-of-type{ font-size:21px; font-weight:600; color:var(--texto); line-height:1.4; }
+
+/* Tarjetas de servicios (ahora viven en Nosotros) */
+.servicios-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+.servicio-card{ background:#fff; border-radius:var(--radius); padding:28px 24px; border:1px solid var(--borde); }
+.servicio-icono,.detalle-icono{
+  background:var(--magenta-claro); color:var(--magenta); display:grid; place-items:center; flex-shrink:0;
+}
+.servicio-icono{ width:46px; height:46px; border-radius:12px; margin-bottom:16px; }
+.servicio-card h3{ font-size:19px; margin-bottom:8px; }
+.servicio-card p{ font-size:14.5px; color:var(--texto-suave); margin:0; }
+
+/* Bloques de detalle */
+.detalle-servicio{
+  display:grid; grid-template-columns:64px 1fr; gap:22px; padding:34px 0;
+  border-bottom:1px solid var(--borde);
+}
+.detalle-servicio:last-child{ border-bottom:none; }
+.detalle-icono{ width:56px; height:56px; border-radius:14px; }
+.detalle-servicio .subtitulo{
+  font-size:12.5px; color:var(--magenta); font-weight:700;
+  text-transform:uppercase; letter-spacing:.04em; margin-bottom:6px;
+}
+.detalle-servicio h2{ font-size:22px; margin-bottom:8px; }
+.detalle-servicio p{ color:var(--texto-suave); font-size:15px; }
+.lista-requisitos{ list-style:none; margin:14px 0 0; padding:0; display:flex; flex-direction:column; gap:8px; }
+.lista-requisitos li{ font-size:14.5px; display:flex; gap:8px; align-items:flex-start; }
+.lista-requisitos li::before{ content:"✓"; color:var(--magenta); font-weight:800; flex-shrink:0; }
+
+/* FAQ */
+.faq{ background:var(--fondo-suave); }
+.faq-lista{ max-width:780px; }
+.faq-item{ border-bottom:1px solid var(--borde); }
+.faq-pregunta{
+  width:100%; background:none; border:0; text-align:left; padding:20px 4px;
+  font:inherit; font-size:16px; font-weight:700; color:var(--texto); cursor:pointer;
+  display:flex; justify-content:space-between; align-items:center; gap:16px;
+}
+.faq-signo{ font-size:22px; color:var(--magenta); flex-shrink:0; transition:transform .2s; }
+.faq-item.abierto .faq-signo{ transform:rotate(45deg); }
+.faq-respuesta{ max-height:0; overflow:hidden; transition:max-height .25s ease; font-size:15px; color:var(--texto-suave); }
+.faq-respuesta-inner{ padding:0 4px 20px; }
+.faq-item.abierto .faq-respuesta{ max-height:320px; }
+
+/* CTA de cierre */
+.cta-banda{ background:var(--magenta-claro); padding:56px 0; text-align:center; }
+.cta-banda h2{ margin-bottom:10px; }
+.cta-banda p{ color:var(--texto-suave); max-width:520px; margin:0 auto 22px; }
+.cta-banda .hero-ctas{ justify-content:center; }
+
+/* Contacto y formularios */
+.contacto{ background:var(--magenta-claro); }
+.contacto .contenedor{ display:grid; grid-template-columns:.9fr 1.1fr; gap:56px; align-items:start; }
+.contacto-info p{ color:var(--texto-suave); font-size:15px; }
+.contacto-dato{ margin-bottom:18px; font-size:14.5px; }
+.contacto-dato .etiqueta{ color:var(--magenta); font-weight:700; display:block; margin-bottom:2px; }
+.contacto-form{
+  background:#fff; border-radius:var(--radius); padding:30px; display:grid; gap:16px;
+  border:1px solid var(--magenta-borde);
+}
+.campo{ display:flex; flex-direction:column; gap:6px; border:0; padding:0; margin:0; min-width:0; }
+.campo label,.campo legend{ font-size:13.5px; font-weight:700; color:var(--texto); padding:0; }
+.campo input,.campo textarea,.campo select{
+  border:1.5px solid var(--borde); border-radius:var(--radius-sm); padding:11px 12px;
+  font:inherit; font-size:15px; background:#fff; color:var(--texto); width:100%;
+}
+.campo input:focus,.campo textarea:focus,.campo select:focus{ outline:none; border-color:var(--magenta); box-shadow:0 0 0 3px var(--magenta-claro); }
+.campo-fila{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.form-nota,.ayuda{ font-size:12.5px; color:var(--texto-suave); margin:0; }
+.error{ font-size:12.5px; color:var(--error); margin:0; min-height:0; }
+.error:empty{ display:none; }
+.form-btn{ margin-top:4px; }
+.gracias{ text-align:center; padding:30px 10px; }
+.gracias strong{ display:block; font-size:20px; margin-bottom:6px; }

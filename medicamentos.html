@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medicamentos | Farmacias del Sombrero</title>
+<meta name="description" content="Catálogo de medicamentos de ejemplo del prototipo. Busca por nombre o categoría y aparta el que necesites.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="medicamentos">
+
+<div id="site-disclaimer"></div>
+<header id="site-header" class="site-header"></header>
+
+<main>
+  <section class="pagina-hero">
+    <div class="contenedor">
+      <p class="section-eyebrow">Medicamentos</p>
+      <h1>Catálogo de medicamentos</h1>
+      <p>Busca, elige y aparta. Tendrás 72 horas para recoger tu medicamento en la farmacia que elijas.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="contenedor catalogo">
+      <aside class="catalogo-filtros" aria-label="Filtros del catálogo">
+        <form class="buscador" id="form-busqueda-catalogo" role="search">
+          <label class="sr-only" for="q-catalogo">Buscar medicamento</label>
+          <input id="q-catalogo" type="search" placeholder="Buscar medicamento" autocomplete="off">
+        </form>
+        <h2 class="filtros-titulo">Categorías</h2>
+        <ul class="lista-categorias" id="lista-categorias"></ul>
+      </aside>
+
+      <div>
+        <div class="catalogo-barra"><p id="conteo" aria-live="polite" style="margin:0"></p></div>
+        <div class="med-grid" id="med-grid"></div>
+        <p class="nota-prototipo">Prototipo: las existencias, caducidades y farmacias mostradas son datos de ejemplo.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<script type="module" src="js/pages/medicamentos.js"></script>
+</body>
+</html>
